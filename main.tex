@@ -33,14 +33,26 @@
 \usepackage{wrapfig} % Wrapping gambar
 \usepackage{multicol} % Pembuatan kolom ganda
 
+% Pengaturan format judul bab
+\usepackage{titlesec}
+\renewcommand{\thesection}{\Alph{section}}
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titlespacing{\section}{0ex}{2ex}{0ex}
+\titlespacing{\subsection}{0ex}{1ex}{0ex}
+
 % Isi keseluruhan dokumen
 \begin{document}
 
   % Menonaktifkan penomoran halaman
   \pagenumbering{gobble}
 
-  % Lembar Pengesahan
+  % Lembar pengesahan
   \input{pengesahan/pengesahan.tex}
-  \cleardoublepage
+  \newpage
+
+  % Konten pendahuluan
+  \input{konten/1-pendahuluan.tex}
+
 
 \end{document}
