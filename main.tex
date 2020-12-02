@@ -1,0 +1,45 @@
+% Pengaturan ukuran teks dan jenis dokumen
+\documentclass[12pt]{report}
+
+% Pengaturan ukuran halaman dan margin
+\usepackage[a4paper,top=30mm,left=30mm,right=20mm,bottom=20mm]{geometry}
+
+% Pengaturan ukuran spasi
+\usepackage[singlespacing]{setspace}
+
+% Judul dokumen
+\title{Proposal Tugas Akhir ITS}
+\author{Musk, Elon Reeve}
+
+% Pengaturan format bahasa
+\usepackage[indonesian]{babel}
+
+% Pengaturan detail pada file PDF
+\usepackage[pdfauthor={\@author},bookmarksnumbered,pdfborder={0 0 0}]{hyperref}
+
+% Pengaturan jenis karakter
+\usepackage[utf8]{inputenc}
+
+% Package lainnya
+\usepackage{etoolbox} % Mengubah fungsi default
+\usepackage{enumitem} % Pembuatan list
+\usepackage{lipsum} % Pembuatan template kalimat
+\usepackage{graphicx} % Input gambar
+\usepackage{longtable} % Pembuatan tabel
+\usepackage[table,xcdraw]{xcolor} % Pewarnaan tabel
+\usepackage{natbib} % Kutipan artikel
+\usepackage{eso-pic} % Pembuatan background
+\usepackage{changepage} % Pembuatan teks kolom
+\usepackage{wrapfig} % Wrapping gambar
+
+% Isi keseluruhan dokumen
+\begin{document}
+
+  % Menonaktifkan penomoran halaman
+  \pagenumbering{gobble}
+
+  % Abstrak
+  \input{konten/abstrak.tex}
+  \cleardoublepage
+
+\end{document}
