@@ -1,5 +1,5 @@
 % Pengaturan ukuran teks dan jenis dokumen
-\documentclass[11pt]{report}
+\documentclass[11pt]{article}
 
 % Pengaturan ukuran halaman dan margin
 \usepackage[a4paper,top=30mm,left=30mm,right=20mm,bottom=20mm]{geometry}
@@ -20,6 +20,9 @@
 % Pengaturan jenis karakter
 \usepackage[utf8]{inputenc}
 
+% Pengaturan ukuran indentasi
+\setlength{\parindent}{2em}
+
 % Package lainnya
 \usepackage{etoolbox} % Mengubah fungsi default
 \usepackage{enumitem} % Pembuatan list
@@ -27,7 +30,7 @@
 \usepackage{graphicx} % Input gambar
 \usepackage{longtable} % Pembuatan tabel
 \usepackage[table,xcdraw]{xcolor} % Pewarnaan tabel
-\usepackage[sectionbib]{natbib} % Kutipan artikel
+\usepackage[numbers]{natbib} % Kutipan artikel
 \usepackage{changepage} % Pembuatan teks kolom
 \usepackage{multicol} % Pembuatan kolom ganda
 \usepackage{multirow} % Pembuatan baris ganda
@@ -64,9 +67,9 @@
 
   % Daftar pustaka
   \section{DAFTAR PUSTAKA}
-  \renewcommand\bibname{}
+  \renewcommand\refname{}
   \vspace{-2ex}
-  \bibliographystyle{plain}
+  \bibliographystyle{unsrtnat}
   \bibliography{pustaka/pustaka.bib}
 
 \end{document}
