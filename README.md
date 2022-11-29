@@ -11,6 +11,8 @@ Template yang ada saat ini baru mengikuti aturan yang diberlakukan oleh [Departe
 
 > Perlu diketahui, template ini bukanlah template resmi yang dikeluarkan oleh ITS maupun departemen-departemen yang ada di bawah naungan ITS.
 
+> Contoh file PDF dari template ini bisa dilihat di [sini](https://b201lab.github.io/template-proposal-ta-its/main.pdf).
+
 ## Fitur
 
 - Format ukuran halaman, margin, dan font yang disesuaikan dengan aturan yang berlaku di ITS.
