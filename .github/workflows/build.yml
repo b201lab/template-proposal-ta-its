@@ -1,4 +1,4 @@
-name: Build LaTeX Document
+name: build
 on:
   pull_request:
     branches: [ main ]
