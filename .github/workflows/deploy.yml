@@ -15,10 +15,10 @@ jobs:
         with:
           root_file: main.tex
 
-      - name: Move documents to a new directory
-        run: mkdir pages && mv *.pdf pages
+      - name: Move and rename document
+        run: mkdir pages && mv main.pdf pages/proposal-ta.pdf
 
-      - name: Deploy documents to GitHub pages
+      - name: Deploy document to GitHub pages
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
           branch: gh-pages

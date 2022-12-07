@@ -5,14 +5,14 @@
 [![repo size](https://img.shields.io/github/repo-size/b201lab/template-proposal-ta-its)](https://github.com/b201lab/template-buku-ta-its)
 [![license](https://img.shields.io/github/license/b201lab/template-proposal-ta-its)](./LICENSE)
 [![build status](https://img.shields.io/github/workflow/status/b201lab/template-proposal-ta-its/build)](https://github.com/b201lab/template-proposal-ta-its/actions)
-[![deploy status](https://img.shields.io/github/workflow/status/b201lab/template-proposal-ta-its/deploy?label=deploy)](https://b201lab.github.io/template-proposal-ta-its/main.pdf)
+[![deploy status](https://img.shields.io/github/workflow/status/b201lab/template-proposal-ta-its/deploy?label=deploy)](https://b201lab.github.io/template-proposal-ta-its/proposal-ta.pdf)
 
 Repositori ini berisi template [LaTeX](https://www.latex-project.org/) dari proposal tugas akhir yang disesuaikan dengan format yang diberlakukan oleh [Institut Teknologi Sepuluh Nopember](https://www.its.ac.id/) (ITS).
 Template yang ada saat ini baru mengikuti aturan yang diberlakukan oleh [Departemen Teknik Komputer](https://www.its.ac.id/komputer/) FTEIC - ITS dengan sedikit penyesuaian, sehingga, secara penuh template ini belum mewakili aturan yang berlaku secara umum di setiap departemen yang ada di ITS.
 
 > Perlu diketahui, template ini bukanlah template resmi yang dikeluarkan oleh ITS maupun departemen-departemen yang ada di bawah naungan ITS.
 
-> Contoh file PDF dari template ini bisa dilihat di [sini](https://b201lab.github.io/template-proposal-ta-its/main.pdf).
+> Contoh file PDF dari template ini bisa dilihat di [sini](https://b201lab.github.io/template-proposal-ta-its/proposal-ta.pdf).
 
 ## Fitur
 
