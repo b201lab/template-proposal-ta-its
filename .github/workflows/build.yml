@@ -1,9 +1,8 @@
 name: build
 on:
-  pull_request:
-    branches: [ main ]
+  workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: ['**']
 jobs:
   build-latex-document:
     runs-on: ubuntu-latest
