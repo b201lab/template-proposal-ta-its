@@ -11,15 +11,9 @@
 \title{Proposal Tugas Akhir ITS}
 \author{Musk, Elon Reeve}
 
-% Pengaturan format bahasa
-\usepackage[indonesian]{babel}
-  \addto{\captionsindonesian}{\renewcommand{\bibname}{Daftar Pustaka}}
-
 % Pengaturan detail pada file PDF
 \usepackage[pdfauthor={\@author},bookmarksnumbered,pdfborder={0 0 0}]{hyperref}
 
-% Pengaturan jenis karakter
-\usepackage[utf8]{inputenc}
 
 % Pengaturan ukuran indentasi
 \setlength{\parindent}{2em}
@@ -27,13 +21,17 @@
 % Package lainnya
 \usepackage{changepage}
 \usepackage{etoolbox} % Mengubah fungsi default
-\usepackage{apacite} % APA-style citation
+%\usepackage{apacite} % APA-style citation
+
+% Pengaturan jenis karakter
+\usepackage[utf8]{inputenc}
+
+\usepackage[style=apa, backend=biber]{biblatex}
 \usepackage{enumitem} % Pembuatan list
 \usepackage{lipsum} % Pembuatan template kalimat
 \usepackage{graphicx} % Input gambar
 \usepackage{longtable} % Pembuatan tabel
 \usepackage[table,xcdraw]{xcolor} % Pewarnaan tabel
-\usepackage[numbers]{natbib} % Pengaturan kutipan artikel
 \usepackage{eso-pic} % Untuk menggunakan background image di halaman
 \usepackage{txfonts} % Font times
 \usepackage{changepage} % Pembuatan teks kolom
@@ -70,6 +68,9 @@
 
 \counterwithin{figure}{section}
 \counterwithin{table}{section}
+
+%\bibliographystyle{apacite}
+\addbibresource{pustaka/pustaka.bib}
 
 
 % Isi keseluruhan dokumen
@@ -139,11 +140,10 @@
   \section{DAFTAR PUSTAKA}
   \renewcommand\refname{}
   \vspace{2ex}
-  \bibliographystyle{apacite}
   \renewcommand{\bibname}{}
   \begingroup
     \def\chapter*#1{}
-    \bibliography{pustaka/pustaka.bib}
+    \printbibliography
   \endgroup
 
 
