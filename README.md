@@ -8,9 +8,7 @@
 [![deploy status](https://img.shields.io/github/actions/workflow/status/b201lab/template-proposal-ta-its/deploy.yml?branch=main&label=deploy)](https://b201lab.github.io/template-proposal-ta-its/proposal-ta.pdf)
 
 Repositori ini berisi template [LaTeX](https://www.latex-project.org/) dari proposal tugas akhir yang disesuaikan dengan format yang diberlakukan oleh [Institut Teknologi Sepuluh Nopember](https://www.its.ac.id/) (ITS).
-Template yang ada saat ini baru mengikuti aturan yang diberlakukan oleh [Departemen Teknik Komputer](https://www.its.ac.id/komputer/) FTEIC - ITS dengan sedikit penyesuaian, sehingga, secara penuh template ini belum mewakili aturan yang berlaku secara umum di setiap departemen yang ada di ITS.
-
-> Perlu diketahui, template ini bukanlah template resmi yang dikeluarkan oleh ITS maupun departemen-departemen yang ada di bawah naungan ITS.
+Template ini mengikuti [aturan resmi](https://www.its.ac.id/pendidikan/wp-content/uploads/sites/112/2022/03/280-SK-Rektor-ttg-Pedoman-Penyusunan-Laporan-Tugas-Akhir-Sarjana-Sarjana-Terapan.pdf) dari ITS tahun 2022. Maka dari itu template ini bersifat universal dan boleh saja digunakan untuk setiap departemen yang ada di ITS.
 
 > Contoh file PDF dari template ini bisa dilihat di [sini](https://b201lab.github.io/template-proposal-ta-its/proposal-ta.pdf).
 
