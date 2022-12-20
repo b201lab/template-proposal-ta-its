@@ -45,8 +45,12 @@
 % Pengaturan format daftar isi, daftar gambar, dan daftar tabel
 \usepackage{tocloft}
 \setlength{\cftsecindent}{0cm}
-\setlength{\cftsubsecindent}{0.5cm}
-\setlength{\cftbeforechapskip}{3pt}
+\setlength{\cftsubsecindent}{2em}
+\setlength{\cftbeforechapskip}{1.5ex}
+\setlength{\cftbeforesecskip}{1.5ex}
+\setlength{\cftbeforetoctitleskip}{0cm}
+\setlength{\cftbeforeloftitleskip}{0cm}
+\setlength{\cftbeforelottitleskip}{0cm}
 \renewcommand{\cftsecfont}{\normalfont\bfseries}% membuat judul section pada daftar isi menjadi bold
 \renewcommand{\cftsecpagefont}{\normalfont\bfseries}% membuat nomor section daftar isi menjadi bold
 \renewcommand{\cfttoctitlefont}{\hfill\Large\bfseries} % command untuk membuat heading bold dan besar
@@ -126,8 +130,6 @@
   \input{lainnya/abstrak-en.tex}
   \newpage
 
-  \newgeometry{top=0cm}
-
   \begin{spacing}{1.5}
     % Daftar isi
     \renewcommand*\contentsname{DAFTAR ISI}
@@ -147,8 +149,6 @@
     \listoftables
     \newpage
   \end{spacing}
-
-  \restoregeometry
 
   % Nomor halaman isi dimulai dari sini
   \pagenumbering{arabic}
