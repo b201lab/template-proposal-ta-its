@@ -7,6 +7,9 @@
 % Pengaturan ukuran spasi
 \usepackage[singlespacing]{setspace}
 
+% Pengaturan caption untuk tabel
+\usepackage{caption}
+
 % Judul dokumen
 \title{Proposal Tugas Akhir ITS}
 \author{Musk, Elon Reeve}
@@ -38,6 +41,20 @@
 \usepackage{multirow} % Pembuatan baris ganda
 \usepackage{tabularx} % Untuk mengatur kolom, seperti grid pada CSS
 \usepackage{wrapfig}
+
+% Pengaturan format daftar isi, daftar gambar, dan daftar tabel
+\usepackage{tocloft}
+\setlength{\cftsecindent}{0cm}
+\setlength{\cftsubsecindent}{0.5cm}
+\setlength{\cftbeforechapskip}{3pt}
+\renewcommand{\cftsecfont}{\normalfont\bfseries}% membuat judul section pada daftar isi menjadi bold
+\renewcommand{\cftsecpagefont}{\normalfont\bfseries}% membuat nomor section daftar isi menjadi bold
+\renewcommand{\cfttoctitlefont}{\hfill\Large\bfseries} % command untuk membuat heading bold dan besar
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftloftitlefont}{\hfill\Large\bfseries}
+\renewcommand{\cftafterloftitle}{\hfill}
+\renewcommand{\cftlottitlefont}{\hfill\Large\bfseries}
+\renewcommand{\cftafterlottitle}{\hfill}
 
 % Definisi untuk "Hati ini sengaja dikosongkan"
 \patchcmd{\cleardoublepage}{\hbox{}}{
