@@ -44,15 +44,13 @@
 
 % Pengaturan format daftar isi, daftar gambar, dan daftar tabel
 \usepackage{tocloft}
-\setlength{\cftsecindent}{0cm}
+\setlength{\cftsecindent}{2em}
 \setlength{\cftsubsecindent}{2em}
 \setlength{\cftbeforechapskip}{1.5ex}
 \setlength{\cftbeforesecskip}{1.5ex}
 \setlength{\cftbeforetoctitleskip}{0cm}
 \setlength{\cftbeforeloftitleskip}{0cm}
 \setlength{\cftbeforelottitleskip}{0cm}
-\renewcommand{\cftsecfont}{\normalfont\bfseries}% membuat judul section pada daftar isi menjadi bold
-\renewcommand{\cftsecpagefont}{\normalfont\bfseries}% membuat nomor section daftar isi menjadi bold
 \renewcommand{\cfttoctitlefont}{\hfill\Large\bfseries} % command untuk membuat heading bold dan besar
 \renewcommand{\cftaftertoctitle}{\hfill}
 \renewcommand{\cftloftitlefont}{\hfill\Large\bfseries}
@@ -78,8 +76,8 @@
 
 % Pengaturan format judul bab
 \usepackage{titlesec}
-\renewcommand{\thesection}{\arabic{section}}
-\titleformat{\chapter}[display]{\bfseries\Large}{BAB \centering\Roman{chapter}}{0ex}{\vspace{0ex}\centering}
+\renewcommand{\thesection}{\thechapter.\arabic{section}}
+\titleformat{\chapter}[hang]{\centering\bfseries\Large}{BAB\ \arabic{chapter}\ }{0ex}{\vspace{0ex}\centering}
 \titleformat*{\section}{\large\bfseries}
 \titleformat*{\subsection}{\normalsize\bfseries}
 \titlespacing{\section}{0ex}{3ex}{1.5ex}
@@ -87,8 +85,8 @@
 \titlespacing{\subsubsection}{0ex}{0.5ex}{0ex}
 \setcounter{secnumdepth}{3} % Untuk memberi penomoran pada \subsubsection
 
-\counterwithin{figure}{section}
-\counterwithin{table}{section}
+\counterwithin{figure}{chapter}
+\counterwithin{table}{chapter}
 
 % Mengganti figure dan table menjadi gambar dan tabel
 \renewcommand{\figurename}{Gambar}
@@ -170,7 +168,8 @@
   \newpage
 
   % Daftar pustaka
-  \section{DAFTAR PUSTAKA}
+  \chapter*{DAFTAR PUSTAKA}
+  \addcontentsline{toc}{chapter}{DAFTAR PUSTAKA}
   \renewcommand\refname{}
   \vspace{2ex}
   \renewcommand{\bibname}{}
