@@ -1,2 +1,6 @@
+# latex auxiliary file
 main*.*
 !main.tex
+
+# vscode workspace settings
+.vscode
