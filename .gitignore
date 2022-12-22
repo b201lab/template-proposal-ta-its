@@ -2,5 +2,6 @@
 main*.*
 !main.tex
 
-# vscode workspace settings
-.vscode
+# ignore dotfiles
+.*
+!.git*
