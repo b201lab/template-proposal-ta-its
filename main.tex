@@ -43,7 +43,9 @@
 \usepackage{wrapfig}
 
 % Pengaturan format daftar isi, daftar gambar, dan daftar tabel
-\usepackage{tocloft}
+\usepackage[titles]{tocloft}
+\setlength{\cftsecindent}{2em}
+\setlength{\cftsubsecindent}{2em}
 \setlength{\cftbeforechapskip}{1.5ex}
 \setlength{\cftbeforesecskip}{1.5ex}
 \setlength{\cftbeforetoctitleskip}{0cm}
@@ -75,7 +77,7 @@
 % Pengaturan format judul bab
 \usepackage{titlesec}
 \renewcommand{\thesection}{\thechapter.\arabic{section}}
-\titleformat{\chapter}[hang]{\centering\bfseries\Large}{BAB\ \arabic{chapter}\ }{0ex}{\vspace{0ex}\centering}
+\titleformat{\chapter}[hang]{\centering\bfseries\large}{BAB\ \arabic{chapter}\ }{0ex}{\vspace{0ex}\centering}
 \titleformat*{\section}{\large\bfseries}
 \titleformat*{\subsection}{\normalsize\bfseries}
 \titlespacing{\chapter}{0ex}{0ex}{4ex}
@@ -108,17 +110,17 @@
   \newcommand\covercontents{sampul/konten-id.tex}
   \input{sampul/sampul-luar.tex}
 
-  % Sampul Bahasa Inggris
-  \renewcommand\covercontents{sampul/konten-en.tex}
-  \input{sampul/sampul-luar.tex}
+  % Sampul Bahasa Inggris | Tidak dibutuhkan pada format 2022
+  % \renewcommand\covercontents{sampul/konten-en.tex}
+  % \input{sampul/sampul-luar.tex}
 
   % Lembar pengesahan
   \input{lainnya/lembar-pengesahan.tex}
   \newpage
 
-  % Lembar pengesahan
-  \input{lainnya/lembar-pengesahan-en.tex}
-  \newpage
+  % Lembar pengesahan | Tidak dibutuhkan pada format 2022
+  % \input{lainnya/lembar-pengesahan-en.tex}
+  % \newpage
 
   % Abstrak
   \input{lainnya/abstrak.tex}
