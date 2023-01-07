@@ -19,7 +19,7 @@ jobs:
         run: mv main.pdf proposal-ta.pdf
 
       - name: Upload document as an artifact
-        uses: actions/upload-artifact@v3.1.1
+        uses: actions/upload-artifact@v3.1.2
         with:
           name: document
           path: proposal-ta.pdf
