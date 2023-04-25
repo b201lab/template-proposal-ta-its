@@ -5,3 +5,5 @@ main*.*
 # ignore dotfiles
 .*
 !.git*
+
+indent.log
