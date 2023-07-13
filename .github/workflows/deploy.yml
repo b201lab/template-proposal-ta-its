@@ -19,7 +19,7 @@ jobs:
         run: mkdir pages && mv main.pdf pages/proposal-ta.pdf
 
       - name: Deploy document to GitHub pages
-        uses: JamesIves/github-pages-deploy-action@v4.4.2
+        uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
           branch: gh-pages
           folder: pages
