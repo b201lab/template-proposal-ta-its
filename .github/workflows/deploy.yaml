@@ -1,0 +1,38 @@
+name: Deploy
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+jobs:
+  deploy-pages:
+    name: Deploy Pages
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      pages: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy-pages.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    steps:
+      - name: Check Out
+        uses: actions/checkout@v4.1.5
+
+      - name: Compile Document
+        uses: xu-cheng/latex-action@3.2.0
+        with:
+          root_file: main.tex
+
+      - name: Rename Document
+        run: mkdir dist && mv main.pdf dist/proposal-ta.pdf
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3.0.1
+        with:
+          path: dist
+
+      - name: Deploy Pages
+        id: deploy-pages
+        uses: actions/deploy-pages@v4.0.5

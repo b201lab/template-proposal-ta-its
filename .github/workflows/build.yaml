@@ -1,0 +1,24 @@
+name: Build
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  build-document:
+    name: Build Document
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Out
+        uses: actions/checkout@v4.1.5
+
+      - name: Compile Document
+        uses: xu-cheng/latex-action@3.2.0
+        with:
+          root_file: main.tex
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4.3.3
+        with:
+          name: proposal-ta
+          path: main.pdf
