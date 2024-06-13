@@ -1,11 +1,5 @@
 # Template LaTeX Proposal Tugas Akhir ITS
 
-[![latest version](https://img.shields.io/github/v/release/b201lab/template-proposal-ta-its)](https://github.com/b201lab/template-proposal-ta-its/releases/)
-[![commits since latest version](https://img.shields.io/github/commits-since/b201lab/template-proposal-ta-its/latest)](https://github.com/b201lab/template-proposal-ta-its/commits/master)
-[![repo size](https://img.shields.io/github/repo-size/b201lab/template-proposal-ta-its)](https://github.com/b201lab/template-buku-ta-its)
-[![license](https://img.shields.io/github/license/b201lab/template-proposal-ta-its)](./LICENSE)
-[![build status](https://img.shields.io/github/actions/workflow/status/b201lab/template-proposal-ta-its/ci.yml?branch=main)](https://github.com/b201lab/template-proposal-ta-its/actions)
-
 Repositori ini berisi template [LaTeX](https://www.latex-project.org/) dari proposal tugas akhir yang disesuaikan dengan format yang diberlakukan oleh [Institut Teknologi Sepuluh Nopember](https://www.its.ac.id/) (ITS). Template yang ada pada repositori ini bersifat universal dan bisa digunakan oleh setiap departemen yang ada di ITS karena sudah mengikuti aturan resmi yang berdasarkan pada [SK Rektor ITS No. 280 Tahun 2022](https://www.its.ac.id/pendidikan/wp-content/uploads/sites/112/2022/03/280-SK-Rektor-ttg-Pedoman-Penyusunan-Laporan-Tugas-Akhir-Sarjana-Sarjana-Terapan.pdf) tentang pedoman penyusunan laporan tugas/proyek akhir program sarjana dan sarjana terapan.
 
 > Contoh file PDF dari template ini bisa dilihat di [sini](https://b201lab.github.io/template-proposal-ta-its/proposal-ta.pdf).
