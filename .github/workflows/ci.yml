@@ -21,7 +21,7 @@ jobs:
         run: mkdir dist && mv main.pdf dist/proposal-ta.pdf
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3.0.1
+        uses: actions/upload-pages-artifact@v4.0.0
         with:
           path: dist
 
