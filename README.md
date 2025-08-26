@@ -41,4 +41,6 @@ Berikut adalah daftar repositori lain yang menggunakan template yang berasal dar
 
 ## Lisensi
 
-Kode sumber yang ada pada repositori ini dilisensikan di bawah [lisensi MIT](./LICENSE).
+Kode sumber yang ada di repositori ini dilisensikan berdasarkan ketentuan [Lisensi MIT](./LICENSE).
+
+Copyright © 2020-2024 [B201 Telematics Laboratory](https://github.com/b201lab)
